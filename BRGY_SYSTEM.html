@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARANGAY DANACBUNGA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header h1 {
+            margin: 10px;
+            position: fixed;
+            right: inherit 0;
+            left: 300px ;
+            width: 50%;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 7px;
+            text-align: center;
+            height: 50px;
+            z-index: 3;
+        }
+
+        header img {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -165px);
+            max-height: 15%;
+            z-index: 6;
+            border-bottom: 2px solid black; /* Add a black line at the bottom */
+            width: auto; /* Allow the logo width to adjust */
+        }
+
+        main {
+            background-color: #f5f58f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            z-index: 1;
+        }
+
+        .button-container {
+
+            text-align: center;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 150px;
+            position: fixed;
+            z-index: 4;
+        }
+
+        .action-button {
+            background-color: #f5f58f;
+            color: black;
+            border: 2px solid black;
+            border-radius: 150px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .action-button.admin {
+            position: center;
+            padding: 10px 50px;
+            font-size: 18px;
+        }
+
+        .action-button.member {
+            position: absolute;
+            bottom: 90px;
+            right: 148px;
+            padding: 10px 60px;
+            font-size: 18px;
+        }
+
+        .action-button.create {
+            position: absolute;
+            top: 220px;
+            right: 1px;
+            margin-top: 60px;
+            padding: 5px 20px;
+            border: none;
+            font-size: 12px;
+            background-color: white;
+        }
+
+        .action-button.create:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .action-button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BARANGAY DANACBUNGA</h1>
+        <img src="LOGO.png" alt="logo">
+    </header>
+    
+    <main>
+        <div class="button-container">
+            <button class="action-button admin" onclick="handleButtonClick('admin')">Official</button>
+            <button class="action-button member" onclick="handleButtonClick('member')">Staff</button>
+            <button class="action-button create" onclick="handleButtonClick('create')">Register New Account?</button>
+        </div>
+    </main>
+ 
+    <script>
+        function handleButtonClick(role) {
+            // Redirect based on the button clicked
+            if (role === 'admin') {
+                window.location.href = 'Admins_file.html';
+            } else if (role === 'member') {
+                window.location.href = 'Members_file.html';
+            }else if (role === 'create') {
+                window.location.href = 'RegisterForm.html';
+            }
+        }
+    </script>
+</body>
+</html>
