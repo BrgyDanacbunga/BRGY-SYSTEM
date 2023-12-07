@@ -10,20 +10,6 @@
             font-family: Arial, sans-serif;
         }
 
-        header h1 {
-            margin: 10px;
-            position: fixed;
-            right: inherit 0;
-            left: -15px;
-            top: 32%;
-            width: 100%;
-            padding: 5px;
-            text-align: center;
-            height: 10px;
-            font-size: 20px;
-            z-index: 7;
-        }
-
         main {
             background-color: #f5f58f;
             display: flex;
@@ -39,10 +25,24 @@
             background-color: white;
             border: 2px solid black;
             border-radius: 10px;
-            top: 210px;
+            top: 120px;
             padding: 150px;
             position: fixed;
             z-index: 4;
+        }
+
+        .button-container h1 {
+            margin: 10px;
+            position: absolute;
+            right: inherit 0;
+            left: -15px;
+            top: 25%;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            height: 10px;
+            font-size: 20px;
+            z-index: 7;
         }
 
         .button-container img {
@@ -103,16 +103,16 @@
 </head>
 <body>
     <header>
-        <h1>BARANGAY DANACBUNGA</h1>
-    </header>
     <main>
         <div class="button-container">
+            <h1>BARANGAY DANACBUNGA</h1>
             <img src="LOGO.png" alt="logo">
             <button class="action-button admin" onclick="handleButtonClick('admin')">Official</button>
             <button class="action-button member" onclick="handleButtonClick('member')">Staff</button>
             <button class="action-button create" onclick="handleButtonClick('create')">Register New Account?</button>
         </div>
     </main>
+    </header>
     <script>
         function handleButtonClick(role) {
             // Redirect based on the button clicked
