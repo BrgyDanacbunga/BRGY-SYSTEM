@@ -15,28 +15,13 @@
             position: fixed;
             right: inherit 0;
             left: -15px;
-            top: 5%;
+            top: 32%;
             width: 100%;
-            background-color: white;
-            border-radius: none;
-            border: 2px solid black;
             padding: 5px;
             text-align: center;
-            height: 50px;
+            height: 10px;
             font-size: 20px;
-            z-index: 3;
-        }
-
-        header img {
-            position: fixed;
-            display: inline-block;
-            top: 43%;
-            left: 50%;
-            transform: translate(-50%, -165px);
-            max-height: 9%;
-            z-index: 6;
-            border-bottom: 2px solid black; /* Add a black line at the bottom */
-            width: auto; /* Allow the logo width to adjust */
+            z-index: 7;
         }
 
         main {
@@ -55,11 +40,21 @@
             border: 2px solid black;
             border-radius: 10px;
             top: 210px;
-            padding: 110px;
+            padding: 150px;
             position: fixed;
             z-index: 4;
         }
 
+        .button-container img {
+            position: absolute;
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%, -165px);
+            max-height: 25%;
+            z-index: 6;
+            border-bottom: 2px solid black;
+            width: auto;
+        }
         .action-button {
             background-color: #f5f58f;
             color: black;
@@ -77,16 +72,16 @@
 
         .action-button.member {
             position: absolute;
-            bottom: 55px;
-            right: 109px;
+            bottom: 79px;
+            right: 147px;
             padding: 10px 60px;
             font-size: 18px;
         }
 
         .action-button.create {
             position: absolute;
-            top: 177px;
-            right: 1px;
+            top: 240px;
+            right: 35px;
             margin-top: 60px;
             padding: 5px 20px;
             border: 2px black;
@@ -109,17 +104,15 @@
 <body>
     <header>
         <h1>BARANGAY DANACBUNGA</h1>
-        <img src="LOGO.png" alt="logo">
     </header>
-    
     <main>
         <div class="button-container">
+            <img src="LOGO.png" alt="logo">
             <button class="action-button admin" onclick="handleButtonClick('admin')">Official</button>
             <button class="action-button member" onclick="handleButtonClick('member')">Staff</button>
             <button class="action-button create" onclick="handleButtonClick('create')">Register New Account?</button>
         </div>
     </main>
- 
     <script>
         function handleButtonClick(role) {
             // Redirect based on the button clicked
