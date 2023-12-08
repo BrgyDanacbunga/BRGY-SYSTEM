@@ -1,0 +1,111 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f58f;
+        }
+
+        header {
+            background-color: rgb(80, 78, 78);
+            color: white;
+            text-align: left;
+            padding: 10px;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        header h2 {
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+        }
+
+        #logo-container {
+            display: flex;
+            align-items: center;
+            background-color: rgb(80, 78, 78);
+        }
+
+        #logo {
+            margin-right: 10px;
+            background-color:rgb(80, 78, 78);
+        }
+
+        #logo img {
+            height: 50px;
+        }
+
+        #menu-button-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #menu-button {
+            background-color:rgb(80, 78, 78);
+            color: black;
+            border: none;
+            font-size: 20px;
+            font-weight: b;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        #submenu {
+            display: none;
+            position: absolute;
+            background-color:rgb(80, 78, 78);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 80px;
+            left: -10px;
+            padding-bottom: 10px;
+            height: 1000px;
+        }
+
+        .submenu-item {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+            border-bottom: 1px solid #555; /* Add a border between items */
+        }
+
+        .submenu-item img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .submenu-item button {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            border: none;
+            background-color: rgb(80, 78, 78);
+            color: black;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+        #owner-container {
+            background-color:rgb(80, 78, 78);
+            color: black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            margin-left: auto;
+        }
+
+        #owner-image {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
