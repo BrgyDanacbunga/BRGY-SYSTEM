@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $stmt->execute([$position, $first_name, $last_name, $middle_name, $gender, $email, $phone_number, $username, $password]);
 
-        header('Location: BRGY_SYSTEM.html');
+        header('Location: index.html');
         exit;
     } catch (PDOException $e) {
         echo "Error registering user: " . $e->getMessage();
