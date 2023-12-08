@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $stmt->execute([$position, $first_name, $last_name, $middle_name, $gender, $email, $phone_number, $username, $password]);
 
-        header('Location: index.html');
+        header('Location: http://localhost/Form/BRGY_SYSTEM.html');
         exit;
     } catch (PDOException $e) {
         echo "Error registering user: " . $e->getMessage();
