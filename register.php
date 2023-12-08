@@ -12,9 +12,6 @@ try {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Debugging: Output the entire $_POST array
-    var_dump($_POST);
-
     $position = isset($_POST['position']) ? $_POST['position'] : '';
     $first_name = isset($_POST['first_name']) ? $_POST['first_name'] : '';
     $last_name = isset($_POST['last_name']) ? $_POST['last_name'] : '';
